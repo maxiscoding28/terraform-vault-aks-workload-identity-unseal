@@ -18,7 +18,7 @@ The Vault server uses Azure Key Vault for its seal and authentication to managed
 
 3. `terraform apply`
 
-4. Add the deployed AKS cluster details to your local kube config.
+4. Add the deployed AKS cluster details to your local kube config with these shell commands:
 ```sh
 terraform output -json > terraform_output.json
 
