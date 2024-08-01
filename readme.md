@@ -12,6 +12,15 @@ This module can be used to "quickly" provision an enterprise Vault cluster in Az
 
 3. `terraform apply`
 
+## Example
+```sh
+# Set variables
+# Mkdir
+# Create main.tf in dir
+# CD in
+# tf init
+# tf apply -auto-approve
+```
 
 ## Providers
 
