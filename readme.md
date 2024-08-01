@@ -12,6 +12,15 @@ This module can be used to "quickly" provision an enterprise Vault cluster in Az
 
 3. `terraform apply`
 
+4. Add the deployed AKS cluster details to your local kube config.
+```sh
+terraform output -json > terraform_output.json
+
+az aks get-credentials \
+    --resource-group "$(jq -r '.inputs_for_az_aks_get_credentials.value.resource_group_name' terraform_output.json)" \
+    --name "$(jq -r '.inputs_for_az_aks_get_credentials.value.cluster_name' terraform_output.json)"
+```
+
 ## Example
 ```sh
 # Set variables
