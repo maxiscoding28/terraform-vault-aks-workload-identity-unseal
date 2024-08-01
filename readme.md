@@ -3,6 +3,7 @@ This module can be used to "quickly" provision an enterprise Vault cluster in Az
 
 ## Instructions
 1. Provide the following variables to the module:
+
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_name_identifier"></a> [name\_identifier](#input\_name\_identifier) | A unique name identifier used to distinguish created resources. | `string` | n/a | yes |
