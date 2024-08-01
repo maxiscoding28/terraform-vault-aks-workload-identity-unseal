@@ -1,0 +1,33 @@
+injector:
+   enabled: false
+server:
+   enterpriseLicense:
+     secretName: vault-ent-license
+   image:
+     repository: hashicorp/vault-enterprise
+     tag: 1.17.2-ent
+   affinity: ""
+   extraLabels:
+    azure.workload.identity/use: "true"
+   standalone:
+      enabled: true
+      config: |
+            storage "raft" {
+              path = "/vault/data/"
+            }
+
+            listener "tcp" {
+              address = "[::]:8200"
+              cluster_address = "[::]:8201"
+              tls_disable = 1
+            }
+            seal "azurekeyvault" {
+              vault_name     = "${key_vault_name}"
+              key_name       = "${key_vault_key_name}"
+            }
+   serviceAccount:
+     create: false
+     name: ${service_account_name}
+     annotations:
+      azure.workload.identity/tenant-id: "${tenant_id}"
+      azure.workload.identity/client-id: "${client_id}"
