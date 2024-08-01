@@ -62,7 +62,7 @@ az aks get-credentials \
 |------|-------------|------|---------|:--------:|
 | <a name="input_name_identifier"></a> [name\_identifier](#input\_name\_identifier) | A unique name identifier used to distinguish created resources. | `string` | n/a | yes |
 | <a name="input_subscription_id"></a> [subscription\_id](#input\_subscription\_id) | Your azure subscription ID | `string` | n/a | yes |
-| <a name="input_tenant_id"></a> [tenant\_id](#input\_tenant\_id) | If you need to verify this, navigate here in the portal: https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Properties | `string` | n/a | yes |
+| <a name="input_tenant_id"></a> [tenant\_id](#input\_tenant\_id) | If you need to verify this, navigate here in the [portal](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Properties) | `string` | n/a | yes |
 | <a name="input_vault_license"></a> [vault\_license](#input\_vault\_license) | Enterprise Vault License | `string` | n/a | yes |
 
 ## Outputs
