@@ -6,7 +6,6 @@ provider "kubernetes" {
   client_key             = base64decode(azurerm_kubernetes_cluster.support_repro.kube_config[0].client_key)
   cluster_ca_certificate = base64decode(azurerm_kubernetes_cluster.support_repro.kube_config[0].cluster_ca_certificate)
 }
-
 resource "kubernetes_service_account" "support_repro" {
   metadata {
     name      = "${var.name_identifier}-sa-unseal"

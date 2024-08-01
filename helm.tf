@@ -8,7 +8,6 @@ provider "helm" {
     cluster_ca_certificate = base64decode(azurerm_kubernetes_cluster.support_repro.kube_config[0].cluster_ca_certificate)
   }
 }
-
 resource "helm_release" "vault" {
   name       = "vault"
   repository = "https://helm.releases.hashicorp.com"
