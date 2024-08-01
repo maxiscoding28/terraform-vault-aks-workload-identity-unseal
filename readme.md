@@ -1,3 +1,4 @@
+<img src="./bill.gif" height="300px" width="200px" >
 ## Summary
 This module can be used to "quickly" provision an enterprise Vault cluster in Azure's managed kubernetes service AKS. The Vault uses Azure Key Vault for its seal and authentication to managed the key is delegated via [workload identity](https://learn.microsoft.com/en-us/azure/aks/workload-identity-overview?tabs=dotnet).
 
