@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./bill.gif" height="300px" width="300px" >
+<img src="https://media.tenor.com/nW9fUL09fqsAAAAM/dab-bill-gates.gif" height="300px" width="300px" >
 </p>
 
 ## Summary
