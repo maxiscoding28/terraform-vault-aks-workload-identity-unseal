@@ -3,13 +3,10 @@ This module can be used to "quickly" provision an enterprise Vault cluster in Az
 
 ## Instructions
 1. Provide the following variables to the module:
-
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_name_identifier"></a> [name\_identifier](#input\_name\_identifier) | A unique name identifier used to distinguish created resources. | `string` | n/a | yes |
-| <a name="input_subscription_id"></a> [subscription\_id](#input\_subscription\_id) | Your azure subscription ID | `string` | n/a | yes |
-| <a name="input_tenant_id"></a> [tenant\_id](#input\_tenant\_id) | # If you need to verify this, navigate here in the portal: https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Properties | `string` | n/a | yes |
-| <a name="input_vault_license"></a> [vault\_license](#input\_vault\_license) | Enterprise Vault License | `string` | n/a | yes |
+    - name: a unique name identifier used to distinguish created resources
+    - subscription_id: your azure subscription ID
+    - tenant_id: your azure tenant ID
+    - vault_license: your vault enterprise license
 
 2. `terraform init`
 
